@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>--Formulário Contato--</title>
+    <meta charset="utf-8" />
+     <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+    <script src="JavaScript1.js"></script>
+ 
+</head>
+<body>
+    <form name="meu_form">
+ 
+        <h4>Entre em contato</h4>
+ 
+        <p class="nome">
+            <input type="text" id="nomeid"  required="required" name="nome" data-js="kmatual" />
+            <label for="nome">Km</label>
+        </p>
+        <p class="fone">
+            <input type="text" id="foneid"  name="fone" data-js="valorlitro" />
+            <label for="fone">Valor do combustível</label>
+ 
+        </p>
+        <p>
+            <input type="consumo" id="consumoid" name="consumo" data-js="consmedio" />
+            <label for="consumo">Consumo médio</label>
+        </p>
+        <p>            
+          <label>Quantidade de litros: </label>  <label for="fone" data-js="result"> </label>
+          
+        </p>     
+        <p>            
+            <label>Valor total a ser gasto: </label>  <label for="fone" data-js="result1"> </label>
+              <div id="a1" resultado1=""></div>
+          </p>  
+            <input type="button" onclick="handleClick()" value="Calcular" />  
+            <input type="button" onclick="limpar()" value="Limpar" />        
+        
+    </form>
+</body>
+</html>
