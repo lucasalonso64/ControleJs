@@ -12,22 +12,26 @@ function handleClick() {
 //    var kmrod = document.querySelector('[data-js="vlrli"]').value;
 //   
 
-    document.querySelector('[data-js="result"]').innerHTML = sum(kmatual, valorlitro, consmedio);
+    document.querySelector('[data-js="result"]').innerHTML = sum(kmatual, valorlitro,consmedio);
     document.querySelector('[data-js="result1"]').innerHTML = sum1(kmatual, valorlitro, consmedio);
    
 }
 
 function sum(kmatual, valorlitro, consmedio) {
-    kmatual = + kmatual;
-    consmedio / consmedio;
-    return kmatual / consmedio;    
+ 
+    perc = kmatual / consmedio
+   // res = perc * valorlitro
+    
+    return perc;    
+      
 }
 
 function sum1(kmatual, valorlitro, consmedio) {
-    kmatual = + kmatual;
-    consmedio * consmedio;
-    return kmatual * consmedio;    
+    res =  perc * valorlitro
+    return res;
+
 }
+
 
 function limpar(){
     var kmatual = document.querySelector('[data-js="kmatual"]').value = '';
